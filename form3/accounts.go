@@ -6,22 +6,20 @@ import (
 	// "io/ioutil"
 	// "log"
 	"net/http"
-
-	"../model"
 )
 
 const (
 	URL = "http://localhost:8080/v1/organisation/accounts"
 )
 
-// func CreatePayload()
-
 // POST /v1/organisation/accounts
-func Create(data model.AccountData) (*http.Response, error) {
+func Create(data map[string]string) (*http.Response, error) {
+	// payload := model.AccountData{}
+    // json.Unmarshal([]byte(data), &payload)
 	body, _ := json.Marshal(data)
-	reqBody := bytes.NewReader(body)
+	// reqBody := bytes.NewReader(body)
 
-	resp, err := http.Post(URL,"application/json", reqBody)
+	resp, err := http.Post(URL,"application/json",bytes.NewBuffer(body))
 	// respBody, err := ioutil.ReadAll(resp.Body)
 	// respCode := string(resp.StatusCode)
 
