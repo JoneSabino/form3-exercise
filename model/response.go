@@ -2,6 +2,9 @@ package model
 
 import "time"
 
+type CreateResponse struct {
+	Data *CreateResponseData `json:"data,omitempty"`
+}
 
 type CreateResponseData struct {
 	Attributes     *CreateResponseAttributes `json:"attributes,omitempty"`
@@ -12,10 +15,6 @@ type CreateResponseData struct {
 	Type           string                    `json:"type,omitempty"`
 	Version        int                       `json:"version,omitempty"`
 	Links          *CreateResponseLinks      `json:"links,omitempty"`
-}
-
-type CreateResponse struct {
-	Data *CreateResponseData `json:"data,omitempty"`
 }
 
 type CreateResponseLinks struct {
