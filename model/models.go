@@ -4,15 +4,16 @@ package model
 // See https://api-docs.form3.tech/api.html#organisation-accounts for
 // more information about fields.
 type CreatePayload struct {
-	Data	*AccountData `json:"data,omitempty"`
+	Data *AccountData `json:"data,omitempty"`
 }
 
 type AccountData struct {
-	Attributes     *AccountAttributes `json:"attributes,omitempty"`
-	ID             string             `json:"id,omitempty"`
-	OrganisationID string             `json:"organisation_id,omitempty"`
-	Type           string             `json:"type,omitempty"`
-	Version        *int64             `json:"version,omitempty"`
+	Attributes     *AccountAttributes    `json:"attributes,omitempty"`
+	ID             string                `json:"id,omitempty"`
+	OrganisationID string                `json:"organisation_id,omitempty"`
+	Type           string                `json:"type,omitempty"`
+	Version        *int64                `json:"version,omitempty"`
+	Relationships  *AccountRelationships `json:"relationships"`
 }
 
 type AccountAttributes struct {
@@ -31,6 +32,27 @@ type AccountAttributes struct {
 	SecondaryIdentification string   `json:"secondary_identification,omitempty"`
 	Status                  *string  `json:"status,omitempty"`
 	Switched                *bool    `json:"switched,omitempty"`
+	ProcessingService       string   `json:"processing_service,omitempty"`
+	UserDefinedInformation  string   `json:"user_defined_information,omitempty"`
+	ValidationType          string   `json:"validation_type,omitempty"`
+	ReferenceMask           string   `json:"reference_mask,omitempty"`
+	AcceptanceQualifier     string   `json:"acceptance_qualifier,omitempty"`
 }
 
+type AccountRelationships struct {
+	AccountEvents *AccountEvents `json:"account_events,omitempty"`
+	MasterAccount *MasterAccount `json:"master_account,omitempty"`
+}
 
+type AccountEvents struct {
+	Data *RelationshipData `json:"data,omitempty"`
+}
+
+type RelationshipData []struct {
+	Type string `json:"type,omitempty"`
+	ID   string `json:"id,omitempty"`
+}
+
+type MasterAccount struct {
+	Data *RelationshipData `json:"data,omitempty"`
+} 
