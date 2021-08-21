@@ -1,7 +1,12 @@
 package model
+
 // Account represents an account in the form3 org section.
 // See https://api-docs.form3.tech/api.html#organisation-accounts for
 // more information about fields.
+type CreatePayload struct {
+	Data	*AccountData `json:"data,omitempty"`
+}
+
 type AccountData struct {
 	Attributes     *AccountAttributes `json:"attributes,omitempty"`
 	ID             string             `json:"id,omitempty"`
@@ -28,6 +33,4 @@ type AccountAttributes struct {
 	Switched                *bool    `json:"switched,omitempty"`
 }
 
-type RequestPayload struct {
-	Data	*AccountData
-}
+
