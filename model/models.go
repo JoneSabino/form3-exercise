@@ -27,3 +27,7 @@ type AccountAttributes struct {
 	Status                  *string  `json:"status,omitempty"`
 	Switched                *bool    `json:"switched,omitempty"`
 }
+
+type RequestPayload struct {
+	Data	*AccountData
+}
