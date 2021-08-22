@@ -5,8 +5,9 @@ import "time"
 // Account represents an account in the form3 org section.
 // See https://api-docs.form3.tech/api.html#organisation-accounts for
 // more information about fields.
-type CreatePayload struct {
-	Data *AccountData `json:"data,omitempty"`
+type Account struct {
+	Data  *AccountData  `json:"data,omitempty"`
+	Links *AccountLinks `json:"links,omitempty"`
 }
 
 type AccountData struct {
@@ -16,9 +17,8 @@ type AccountData struct {
 	Type           string                `json:"type,omitempty"`
 	Version        *int64                `json:"version,omitempty"`
 	Relationships  *AccountRelationships `json:"relationships,omitempty"`
-	Links          *AccountLinks		 `json:"links,omitempty"`
-	CreatedOn      time.Time                 `json:"created_on,omitempty"`
-	ModifiedOn     time.Time                 `json:"modified_on,omitempty"`
+	CreatedOn      time.Time             `json:"created_on,omitempty"`
+	ModifiedOn     time.Time             `json:"modified_on,omitempty"`
 }
 
 type AccountAttributes struct {
@@ -75,3 +75,4 @@ type PrivateIdentification struct {
 type AccountLinks struct {
 	Self string `json:"self,omitempty"`
 }
+
