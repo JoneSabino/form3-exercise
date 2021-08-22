@@ -16,7 +16,6 @@ type AccountData struct {
 	OrganisationID string                `json:"organisation_id,omitempty"`
 	Type           string                `json:"type,omitempty"`
 	Version        *int64                `json:"version,omitempty"`
-	Relationships  *AccountRelationships `json:"relationships,omitempty"`
 	CreatedOn      time.Time             `json:"created_on,omitempty"`
 	ModifiedOn     time.Time             `json:"modified_on,omitempty"`
 }
@@ -42,34 +41,6 @@ type AccountAttributes struct {
 	ValidationType          string                 `json:"validation_type,omitempty"`
 	ReferenceMask           string                 `json:"reference_mask,omitempty"`
 	AcceptanceQualifier     string                 `json:"acceptance_qualifier,omitempty"`
-	PrivateIdentification   *PrivateIdentification `json:"private_identification,omitempty"`
-}
-
-type AccountRelationships struct {
-	AccountEvents *AccountEvents `json:"account_events,omitempty"`
-	MasterAccount *MasterAccount `json:"master_account,omitempty"`
-}
-
-type AccountEvents struct {
-	Data *RelationshipData `json:"data,omitempty"`
-}
-
-type RelationshipData []struct {
-	Type string `json:"type,omitempty"`
-	ID   string `json:"id,omitempty"`
-}
-
-type MasterAccount struct {
-	Data *RelationshipData `json:"data,omitempty"`
-}
-
-type PrivateIdentification struct {
-	BirthDate      string   `json:"birth_date,omitempty"`
-	BirthCountry   string   `json:"birth_country,omitempty"`
-	Identification string   `json:"identification,omitempty"`
-	Address        []string `json:"address,omitempty"`
-	City           string   `json:"city,omitempty"`
-	Country        string   `json:"country,omitempty"`
 }
 
 type AccountLinks struct {
