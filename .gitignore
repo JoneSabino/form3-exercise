@@ -13,4 +13,4 @@
 .idea
 **.code-workspace
 main.*
-.DS_Store
+**.DS_Store
