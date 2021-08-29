@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"strconv"
 	"testing"
+
 	"github.com/JoneSabino/form3-exercise/pkg/model"
 	uuid "github.com/satori/go.uuid"
 )
@@ -202,9 +203,9 @@ func TestFetch(t *testing.T) {
 // TestDelete calls accounts.Delete, checking
 // for a successful response.
 func TestDelete(t *testing.T) {
-	version = "1"
+	version = "0"
 	resp, err := Delete(accountId, version)
-	if resp == http.StatusNoContent{
+	if resp == http.StatusNoContent {
 		t.Log("Success!")
 	} else {
 		t.Error(err)
