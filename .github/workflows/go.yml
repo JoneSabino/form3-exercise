@@ -1,4 +1,4 @@
-name: Lib Test
+name: Form3 Interview Exercise Tests
 
 on:
   push:
@@ -8,12 +8,16 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    env:
+      API_ADDR: "http://localhost:8080"
     steps:
     - uses: actions/checkout@v2
     - name: Set up stack
-      run: docker-compose up -d
-    - name: Check running containers
-      run: docker ps -a
+      run: docker-compose up -d postgresql vault accountapi
+    - name: tests
+      run: docker-compose up clientlib-tests
+      
+      
       
       
       
