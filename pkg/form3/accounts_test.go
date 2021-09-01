@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"strconv"
 	"testing"
-
 	"github.com/JoneSabino/form3-exercise/pkg/model"
 	uuid "github.com/satori/go.uuid"
 )
@@ -41,7 +40,7 @@ func TestCreate(t *testing.T) {
 	accountId = resp.Data.ID
 	if (model.Account{}) != resp {
 		resp1, _ := json.Marshal(resp)
-		t.Log(string(resp1))
+		t.Log("Account Created Succesfully! \n Response: \n " + string(resp1))
 	} else {
 		t.Error("Expected a successful Create() return, found:\n" + err.Error())
 	}
@@ -54,8 +53,8 @@ func TestCreate(t *testing.T) {
 //  - Missing Country Value
 //  - Missing Country Field
 //  - Missing Name Field
-//  - Missing Name Value 1
-//  - Missing Name Value 2
+//  - Missing Name Value: Empty string ""
+//  - Missing Name Value: Empty Field
 //  - Missing OrganisationID Field
 //  - Missing OrganisationID Value
 func TestCreateMissingReqFields(t *testing.T) {
@@ -75,7 +74,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err := Create(accData) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing Country Value")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
@@ -92,7 +91,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err = Create(accData1) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing Country Field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
@@ -110,12 +109,12 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err = Create(accData2) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing Name Field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
 
-	// Missing Name Value 1
+	// Missing Name Value: Empty String
 	accAttrs3 := model.AccountAttributes{
 		Country: ct,
 		Name:    []string{""},
@@ -128,12 +127,12 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err = Create(accData3) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing Name Value: Found empty string instead -> \"\"")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
 
-	// Missing Name Value 2
+	// Missing Name Value: Empty Field
 	accAttrs4 := model.AccountAttributes{
 		Country: ct,
 		Name:    []string{},
@@ -146,7 +145,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err = Create(accData4) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing Name Value: Empty field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
@@ -163,7 +162,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err = Create(accData5) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing OrganisationID Field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
@@ -181,7 +180,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 
 	_, err = Create(accData6) // should return the expected error message
 	if err.Error() == "Organisation ID, Country and all Names must be filled" {
-		t.Log(err.Error())
+		t.Log("Missing OrganisationID Value")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
 	}
@@ -194,7 +193,7 @@ func TestFetch(t *testing.T) {
 	version = strconv.FormatInt(*resp.Data.Version, 10)
 	if (model.Account{}) != resp {
 		resp1, _ := json.Marshal(resp)
-		t.Log(string(resp1))
+		t.Log("Fetch method working properly. Response: \n" + string(resp1))
 	} else {
 		t.Error("Expected a successful Create() return, found:\n" + err.Error())
 	}
@@ -206,7 +205,7 @@ func TestDelete(t *testing.T) {
 	version = "0"
 	resp, err := Delete(accountId, version)
 	if resp == http.StatusNoContent {
-		t.Log("Success!")
+		t.Log("Delete method working properly! Response: \n" + strconv.Itoa(resp))
 	} else {
 		t.Error(err)
 	}
