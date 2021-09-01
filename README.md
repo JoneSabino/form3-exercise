@@ -17,6 +17,8 @@ If you don't have docker installed, please visit:
 
 [https://www.docker.com/get-started](https://www.docker.com/get-started)
 
+The documentation of the packages are in the [`docs`](https://github.com/JoneSabino/form3-exercise/tree/main/docs) directory.
+
 Examples of usage:
 
 ```go
