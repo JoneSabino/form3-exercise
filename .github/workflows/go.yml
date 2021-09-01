@@ -15,7 +15,7 @@ jobs:
     - name: Check running containers
       run: docker ps -a
     - name: tests
-      run: docker-compose up -d --build clientlib-tests
+      run: go test ./...
       
       
       
