@@ -37,6 +37,9 @@ func TestCreate(t *testing.T) {
 	}
 
 	resp, err := Create(accData) // should return the response body as a struct
+	if err != nil {
+		panic(err.Error())
+	}
 	accountId = resp.Data.ID
 	if (model.Account{}) != resp {
 		resp1, _ := json.Marshal(resp)
@@ -73,7 +76,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err := Create(accData) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing Country Value")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
@@ -90,7 +93,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err = Create(accData1) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing Country Field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
@@ -108,7 +111,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err = Create(accData2) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing Name Field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
@@ -126,7 +129,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err = Create(accData3) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing Name Value: Found empty string instead -> \"\"")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
@@ -144,7 +147,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err = Create(accData4) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing Name Value: Empty field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
@@ -161,7 +164,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err = Create(accData5) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing OrganisationID Field")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
@@ -179,7 +182,7 @@ func TestCreateMissingReqFields(t *testing.T) {
 	}
 
 	_, err = Create(accData6) // should return the expected error message
-	if err.Error() == "Organisation ID, Country and all Names must be filled" {
+	if err.Error() == "organisation ID, Country and all Names must be filled" {
 		t.Log("Missing OrganisationID Value")
 	} else {
 		t.Error("Error message differs from expected:\n" + err.Error())
