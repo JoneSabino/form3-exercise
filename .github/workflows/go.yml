@@ -1,4 +1,4 @@
-name: Form3 Account API Client Library
+name: Form3 Account API Client Library Tests
 
 on:
   push:
