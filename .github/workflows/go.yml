@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      API_ADDR: "http://accountapi:8080"
+      API_ADDR: "http://localhost:8080"
     steps:
     - uses: actions/checkout@v2
     - name: Set up stack
