@@ -17,7 +17,7 @@ jobs:
     - name: Check running containers
       run: docker ps -a
     - name: tests
-      run: go test ./...
+      run: go test - v ./... --cover
       
       
       
