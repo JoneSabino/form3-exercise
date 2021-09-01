@@ -7,16 +7,16 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
+	"os"
 	"net/http"
 	"strconv"
-
 	"github.com/JoneSabino/form3-exercise/pkg/model"
 	uuid "github.com/satori/go.uuid"
 )
 
-const (
-	uRL = "http://localhost:8080/v1/organisation/accounts/"
-)
+const resource = "/v1/organisation/accounts/"
+var	uRL = os.Getenv("API_ADDR") + resource
+
 
 // Receives a structure containing the account creation request body
 // Returns the response body content struct
@@ -26,7 +26,6 @@ const (
 // Request: POST /v1/organisation/accounts
 func Create(accData model.AccountData) (model.Account, error) {
 	id := uuid.NewV4().String()
-	// id := "ad27e265-9605-4b4b-a0e5-3003ea9cc4dc"
 	err := checkReqFields(accData)
 	if err != nil {
 		return model.Account{}, err
@@ -79,6 +78,9 @@ func Create(accData model.AccountData) (model.Account, error) {
 	}
 
 	accModel, err := mapResponse(respBody)
+	if err != nil {
+		return model.Account{}, err
+	}
 
 	return accModel, nil
 }
@@ -108,6 +110,9 @@ func Fetch(accountId string) (model.Account, error) {
 	}
 
 	respModel, err := mapResponse(respBody)
+	if err != nil {
+		return model.Account{}, err
+	}
 
 	return respModel, nil
 }
@@ -178,7 +183,7 @@ func checkReqFields(accData model.AccountData) (error){
 	accData.Attributes.Name == nil || 
 	len(accData.Attributes.Name) == 0 ||
 	contains(accData.Attributes.Name, "") {
-        return errors.New("Organisation ID, Country and all Names must be filled")
+        return errors.New("organisation ID, Country and all Names must be filled")
     }
 	return nil
 }
