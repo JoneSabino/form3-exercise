@@ -1,0 +1,727 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://localhost:6060/pkg/github.com/JoneSabino/form3-exercise/pkg/form3/
+Subject: form3 - Go Documentation Server
+Date: Wed, 1 Sep 2021 17:22:20 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--R4g2hiY7q2IeFgqCHBPXl146bcFr8Wd8JmiqkwxKhF----"
+
+
+------MultipartBoundary--R4g2hiY7q2IeFgqCHBPXl146bcFr8Wd8JmiqkwxKhF----
+Content-Type: text/html
+Content-ID: <frame-55C29F7415BF54E758FE2D0B792EBFE1@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:6060/pkg/github.com/JoneSabino/form3-exercise/pkg/form3/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<meta name=3D"theme-color" content=3D"#375EAB">
+
+  <title>form3 - Go Documentation Server</title>
+
+<link type=3D"text/css" rel=3D"stylesheet" href=3D"http://localhost:6060/li=
+b/godoc/style.css">
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div id=3D"lowframe" style=3D"position: fixed; bottom: 0; left: 0; height: =
+0; width: 100%; border-top: thin solid grey; background-color: white; overf=
+low: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id=3D"topbar" class=3D"wide"><div class=3D"container">
+<div class=3D"top-heading" id=3D"heading-wide"><a href=3D"http://localhost:=
+6060/pkg/">Go Documentation Server</a></div>
+<div class=3D"top-heading" id=3D"heading-narrow"><a href=3D"http://localhos=
+t:6060/pkg/">GoDoc</a></div>
+<a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/form3-exercise/p=
+kg/form3/#" id=3D"menu-button"><span id=3D"menu-button-arrow">=E2=96=BD</sp=
+an></a>
+<form method=3D"GET" action=3D"http://localhost:6060/search">
+<div id=3D"menu" style=3D"min-width: 60px;">
+
+<span class=3D"search-box"><input type=3D"search" id=3D"search" name=3D"q" =
+placeholder=3D"Search" aria-label=3D"Search" required=3D""><button type=3D"=
+submit"><span><!-- magnifying glass: --><svg width=3D"24" height=3D"24" vie=
+wBox=3D"0 0 24 24"><title>submit search</title><path d=3D"M15.5 14h-.79l-.2=
+8-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 1=
+6 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0=
+C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path=
+><path d=3D"M0 0h24v24H0z" fill=3D"none"></path></svg></span></button></spa=
+n>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id=3D"page" class=3D"wide" tabindex=3D"-1" style=3D"outline: 0px;">
+<div class=3D"container">
+
+
+  <h1>
+    Package form3
+    <span class=3D"text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id=3D"nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+=09
+
+=09
+	=09
+		<div id=3D"short-nav">
+			<dl>
+			<dd><code>import "github.com/JoneSabino/form3-exercise/pkg/form3"</code>=
+</dd>
+			</dl>
+			<dl>
+			<dd><a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/form3-exe=
+rcise/pkg/form3/#pkg-overview" class=3D"overviewLink">Overview</a></dd>
+			<dd><a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/form3-exe=
+rcise/pkg/form3/#pkg-index" class=3D"indexLink">Index</a></dd>
+		=09
+		=09
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id=3D"pkg-overview" class=3D"toggleVisible">
+			<div class=3D"collapsed">
+				<h2 class=3D"toggleButton" title=3D"Click to show Overview section">Ove=
+rview =E2=96=B9</h2>
+			</div>
+			<div class=3D"expanded">
+				<h2 class=3D"toggleButton" title=3D"Click to hide Overview section">Ove=
+rview =E2=96=BE</h2>
+			=09
+			=09
+			</div>
+		</div>
+
+		<div id=3D"pkg-index" class=3D"toggleVisible">
+		<div class=3D"collapsed">
+			<h2 class=3D"toggleButton" title=3D"Click to show Index section">Index =
+=E2=96=B9</h2>
+		</div>
+		<div class=3D"expanded">
+			<h2 class=3D"toggleButton" title=3D"Click to hide Index section">Index =
+=E2=96=BE</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto=
+ nav. -->
+			<div id=3D"manual-nav">
+			<dl>
+		=09
+		=09
+		=09
+			=09
+				<dd><a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/form3-ex=
+ercise/pkg/form3/#Create">func Create(accData model.AccountData) (model.Acc=
+ount, error)</a></dd>
+		=09
+			=09
+				<dd><a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/form3-ex=
+ercise/pkg/form3/#Delete">func Delete(accountId string, version string) (in=
+t, error)</a></dd>
+		=09
+			=09
+				<dd><a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/form3-ex=
+ercise/pkg/form3/#Fetch">func Fetch(accountId string) (model.Account, error=
+)</a></dd>
+		=09
+		=09
+		=09
+			</dl>
+			</div><!-- #manual-nav -->
+
+	=09
+
+	=09
+			<h3>Package files</h3>
+			<p>
+			<span style=3D"font-size:90%">
+		=09
+				<a href=3D"http://localhost:6060/src/github.com/JoneSabino/form3-exerci=
+se/pkg/form3/accounts.go">accounts.go</a>
+		=09
+			</span>
+			</p>
+	=09
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+	=09
+
+	=09
+	=09
+	=09
+		=09
+		=09
+			<h2 id=3D"Create">func <a href=3D"http://localhost:6060/src/github.com/J=
+oneSabino/form3-exercise/pkg/form3/accounts.go?s=3D507:568#L17">Create</a>
+				<a class=3D"permalink" href=3D"http://localhost:6060/pkg/github.com/Jon=
+eSabino/form3-exercise/pkg/form3/#Create">=C2=B6</a>
+			=09
+			=09
+			</h2>
+			<pre>func Create(accData <a href=3D"http://localhost:6060/pkg/github.com=
+/JoneSabino/form3-exercise/pkg/model/">model</a>.<a href=3D"http://localhos=
+t:6060/pkg/github.com/JoneSabino/form3-exercise/pkg/model/#AccountData">Acc=
+ountData</a>) (<a href=3D"http://localhost:6060/pkg/github.com/JoneSabino/f=
+orm3-exercise/pkg/model/">model</a>.<a href=3D"http://localhost:6060/pkg/gi=
+thub.com/JoneSabino/form3-exercise/pkg/model/#Account">Account</a>, <a href=
+=3D"http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+Receives a structure containing the account creation request body
+Returns the response body content struct
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `AccAttr`: model.AccountAttribute
+</pre>
+<p>
+Request: POST /v1/organisation/accounts
+</p>
+
+		=09
+		=09
+
+	=09
+		=09
+		=09
+			<h2 id=3D"Delete">func <a href=3D"http://localhost:6060/src/github.com/J=
+oneSabino/form3-exercise/pkg/form3/accounts.go?s=3D3039:3097#L119">Delete</=
+a>
+				<a class=3D"permalink" href=3D"http://localhost:6060/pkg/github.com/Jon=
+eSabino/form3-exercise/pkg/form3/#Delete">=C2=B6</a>
+			=09
+			=09
+			</h2>
+			<pre>func Delete(accountId <a href=3D"http://localhost:6060/pkg/builtin/=
+#string">string</a>, version <a href=3D"http://localhost:6060/pkg/builtin/#=
+string">string</a>) (<a href=3D"http://localhost:6060/pkg/builtin/#int">int=
+</a>, <a href=3D"http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+Deletes the account specified.
+</p>
+<p>
+Returns a string with the response status.
+</p>
+<p>
+A successul request will return '204 No Content'
+Parameters:
+</p>
+<pre>- `AccountId` : string
+- `Version` : string
+</pre>
+<p>
+Request: DELETE /v1/organisation/accounts/{account_id}?version=3D{version}
+</p>
+
+		=09
+		=09
+
+	=09
+		=09
+		=09
+			<h2 id=3D"Fetch">func <a href=3D"http://localhost:6060/src/github.com/Jo=
+neSabino/form3-exercise/pkg/form3/accounts.go?s=3D2140:2191#L83">Fetch</a>
+				<a class=3D"permalink" href=3D"http://localhost:6060/pkg/github.com/Jon=
+eSabino/form3-exercise/pkg/form3/#Fetch">=C2=B6</a>
+			=09
+			=09
+			</h2>
+			<pre>func Fetch(accountId <a href=3D"http://localhost:6060/pkg/builtin/#=
+string">string</a>) (<a href=3D"http://localhost:6060/pkg/github.com/JoneSa=
+bino/form3-exercise/pkg/model/">model</a>.<a href=3D"http://localhost:6060/=
+pkg/github.com/JoneSabino/form3-exercise/pkg/model/#Account">Account</a>, <=
+a href=3D"http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+Receives the account id and returns the response body content struct
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `accountId` : string
+</pre>
+<p>
+Request: GET /v1/organisation/accounts/{account_id}
+</p>
+
+		=09
+		=09
+
+	=09
+	=09
+=09
+
+=09
+
+
+
+
+
+
+
+<div id=3D"footer">
+Build version go1.16.7.<br>
+Except as <a href=3D"https://developers.google.com/site-policies#restrictio=
+ns">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href=3D"http://localhost:6060/LICENSE">BSD =
+license</a>.<br>
+<a href=3D"https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href=3D"https://www.google.com/intl/en/policies/privacy/">Privacy Policy=
+</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+</body></html>
+------MultipartBoundary--R4g2hiY7q2IeFgqCHBPXl146bcFr8Wd8JmiqkwxKhF----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:6060/lib/godoc/style.css
+
+@charset "utf-8";
+
+body { margin: 0px; font-family: Arial, sans-serif; background-color: rgb(2=
+55, 255, 255); line-height: 1.3; text-align: center; color: rgb(34, 34, 34)=
+; }
+
+textarea { color: inherit; }
+
+pre, code { font-family: Menlo, monospace; font-size: 0.875rem; }
+
+pre { line-height: 1.4; overflow-x: auto; }
+
+pre .comment { color: rgb(0, 102, 0); }
+
+pre .highlight, pre .highlight-comment, pre .selection-highlight, pre .sele=
+ction-highlight-comment { background: rgb(255, 255, 0); }
+
+pre .selection, pre .selection-comment { background: rgb(255, 150, 50); }
+
+pre .ln { color: rgb(153, 153, 153); background: rgb(239, 239, 239); }
+
+.ln { user-select: none; display: inline-block; width: 8ch; }
+
+.search-nav { margin-left: 1.25rem; font-size: 0.875rem; column-gap: 1.25re=
+m; column-fill: auto; column-width: 14rem; }
+
+.search-nav .indent { margin-left: 1.25rem; }
+
+a, .exampleHeading .text, .expandAll { color: rgb(55, 94, 171); text-decora=
+tion: none; }
+
+a:hover, .exampleHeading .text:hover, .expandAll:hover { text-decoration: u=
+nderline; }
+
+.article a { text-decoration: underline; }
+
+.article .title a { text-decoration: none; }
+
+.permalink { display: none; }
+
+:hover > .permalink { display: inline; }
+
+p, li { max-width: 50rem; overflow-wrap: break-word; }
+
+p, pre, ul, ol { margin: 1.25rem; }
+
+pre { background: rgb(239, 239, 239); padding: 0.625rem; border-radius: 0.3=
+125rem; }
+
+h1, h2, h3, h4, .rootHeading { margin: 1.25rem 0px; padding: 0px; color: rg=
+b(55, 94, 171); font-weight: bold; }
+
+h1 { font-size: 1.75rem; line-height: 1; }
+
+h1 .text-muted { color: rgb(119, 119, 119); }
+
+h2 { font-size: 1.25rem; background: rgb(224, 235, 245); padding: 0.5rem; l=
+ine-height: 1.25; font-weight: normal; overflow: auto; overflow-wrap: break=
+-word; }
+
+h2 a { font-weight: bold; }
+
+h3 { font-size: 1.25rem; line-height: 1.25; overflow: auto; overflow-wrap: =
+break-word; }
+
+h3, h4 { margin: 1.25rem 0.3125rem; }
+
+h4 { font-size: 1rem; }
+
+.rootHeading { font-size: 1.25rem; margin: 0px; }
+
+h2 > span, h3 > span { float: right; margin: 0px 25px 0px 0px; font-weight:=
+ normal; color: rgb(82, 121, 199); }
+
+dl { margin: 1.25rem; }
+
+dd { margin: 0px 0px 0px 1.25rem; }
+
+dl, dd { font-size: 0.875rem; }
+
+div#nav table td { vertical-align: top; }
+
+#pkg-index h3 { font-size: 1rem; }
+
+.pkg-dir { padding: 0px 0.625rem; }
+
+.pkg-dir table { border-collapse: collapse; border-spacing: 0px; }
+
+.pkg-name { padding-right: 0.625rem; }
+
+.alert { color: rgb(170, 0, 0); }
+
+.top-heading { float: left; padding: 1.313rem 0px; font-size: 1.25rem; font=
+-weight: normal; }
+
+.top-heading a { color: rgb(34, 34, 34); text-decoration: none; }
+
+#pkg-examples h3 { float: left; }
+
+#pkg-examples dl { clear: both; }
+
+.expandAll { cursor: pointer; float: left; margin: 1.25rem 0px; }
+
+div#topbar { background: rgb(224, 235, 245); height: 4rem; overflow: hidden=
+; }
+
+div#page { width: 100%; }
+
+div#page > .container, div#topbar > .container { text-align: left; margin-l=
+eft: auto; margin-right: auto; padding: 0px 1.25rem; }
+
+div#topbar > .container, div#page > .container { max-width: 59.38rem; }
+
+div#page.wide > .container, div#topbar.wide > .container { max-width: none;=
+ }
+
+div#plusone { float: right; clear: right; margin-top: 0.3125rem; }
+
+div#footer { text-align: center; color: rgb(102, 102, 102); font-size: 0.87=
+5rem; margin: 2.5rem 0px; }
+
+div#menu > a, input#search, div#learn .buttons a, div.play .buttons a, div#=
+blog .read a, #menu-button { padding: 0.625rem; text-decoration: none; font=
+-size: 1rem; border-radius: 0.3125rem; }
+
+div#playground .buttons a, div#menu > a, input#search, #menu-button { borde=
+r: 0.0625rem solid rgb(55, 94, 171); }
+
+div#playground .buttons a, div#menu > a, #menu-button { color: white; backg=
+round: rgb(55, 94, 171); }
+
+#playgroundButton.active { background: white; color: rgb(55, 94, 171); }
+
+a#start, div#learn .buttons a, div.play .buttons a, div#blog .read a { colo=
+r: rgb(34, 34, 34); border: 0.0625rem solid rgb(55, 94, 171); background: r=
+gb(224, 235, 245); }
+
+.download { width: 9.375rem; }
+
+div#menu { text-align: right; padding: 0.625rem; white-space: nowrap; max-h=
+eight: 0px; transition: max-height 0.25s linear 0s; width: 100%; }
+
+div#menu.menu-visible { max-height: 31.25rem; }
+
+div#menu > a, #menu-button { margin: 0.625rem 0.125rem; padding: 0.625rem; =
+}
+
+::-webkit-input-placeholder { color: rgb(127, 127, 127); opacity: 1; }
+
+::placeholder { color: rgb(127, 127, 127); opacity: 1; }
+
+#menu .search-box { display: inline-flex; width: 8.75rem; }
+
+input#search { background: white; color: rgb(34, 34, 34); box-sizing: borde=
+r-box; appearance: none; border-top-right-radius: 0px; border-bottom-right-=
+radius: 0px; border-right: 0px; margin-right: 0px; flex-grow: 1; max-width:=
+ 100%; min-width: 5.625rem; }
+
+input#search + button { display: inline; font-size: 1em; background-color: =
+rgb(55, 94, 171); color: white; border: 0.0625rem solid rgb(55, 94, 171); b=
+order-radius: 0px 0.3125rem 0.3125rem 0px; margin-left: 0px; cursor: pointe=
+r; }
+
+input#search + button span { display: flex; }
+
+input#search + button svg { fill: white; }
+
+#menu-button { display: none; position: absolute; right: 0.3125rem; top: 0p=
+x; margin-right: 0.3125rem; }
+
+#menu-button-arrow { display: inline-block; }
+
+.vertical-flip { transform: rotate(-180deg); }
+
+div.left { float: left; clear: left; margin-right: 2.5%; }
+
+div.right { float: right; clear: right; margin-left: 2.5%; }
+
+div.left, div.right { width: 45%; }
+
+div#learn, div#about { padding-top: 1.25rem; }
+
+div#learn h2, div#about { margin: 0px; }
+
+div#about { font-size: 1.25rem; margin: 0px auto 1.875rem; }
+
+a#start { display: block; padding: 0.625rem; text-align: center; text-decor=
+ation: none; border-radius: 0.3125rem; }
+
+a#start .big { display: block; font-weight: bold; font-size: 1.25rem; }
+
+a#start .desc { display: block; font-size: 0.875rem; font-weight: normal; m=
+argin-top: 0.3125rem; }
+
+div#learn .popout { float: right; display: block; cursor: pointer; font-siz=
+e: 0.75rem; background: url("/doc/share.png") right center no-repeat; paddi=
+ng: 0.375rem 1.688rem; }
+
+div#learn pre, div#learn textarea { padding: 0px; margin: 0px; font-family:=
+ Menlo, monospace; font-size: 0.875rem; }
+
+div#learn .input { padding: 0.625rem; margin-top: 0.625rem; height: 9.375re=
+m; border-top-left-radius: 0.3125rem; border-top-right-radius: 0.3125rem; }
+
+div#learn .input textarea { width: 100%; height: 100%; border: none; outlin=
+e: none; resize: none; }
+
+div#learn .output { padding: 0.625rem; height: 3.688rem; overflow: auto; bo=
+rder-bottom-right-radius: 0.3125rem; border-bottom-left-radius: 0.3125rem; =
+border-top: none !important; }
+
+div#learn .output pre { padding: 0px; border-radius: 0px; }
+
+div#learn .input, div#learn .input textarea, div#learn .output, div#learn .=
+output pre { background: rgb(255, 255, 216); }
+
+div#learn .input, div#learn .output { border: 0.0625rem solid rgb(55, 94, 1=
+71); }
+
+div#learn .buttons { float: right; padding: 1.25rem 0px 0.625rem; text-alig=
+n: right; }
+
+div#learn .buttons a { height: 1rem; margin-left: 0.3125rem; padding: 0.625=
+rem; }
+
+div#learn .toys { margin-top: 0.5rem; }
+
+div#learn .toys select { font-size: 0.875rem; border: 0.0625rem solid rgb(5=
+5, 94, 171); margin: 0px; }
+
+div#learn .output .exit { display: none; }
+
+div#video { max-width: 100%; }
+
+div#blog, div#video { margin-top: 2.5rem; }
+
+div#blog > a, div#blog > div, div#blog > h2, div#video > a, div#video > div=
+, div#video > h2 { margin-bottom: 0.625rem; }
+
+div#blog .title, div#video .title { display: block; font-size: 1.25rem; }
+
+div#blog .when { color: rgb(102, 102, 102); font-size: 0.875rem; }
+
+div#blog .read { text-align: right; }
+
+@supports (--c: 0) {
+  [style*=3D"--aspect-ratio-padding:"] { position: relative; overflow: hidd=
+en; padding-top: var(--aspect-ratio-padding); }
+  [style*=3D"--aspect-ratio-padding:"] > * { position: absolute; top: 0px; =
+left: 0px; width: 100%; height: 100%; }
+}
+
+.toggleButton { cursor: pointer; }
+
+.toggle > .collapsed { display: block; }
+
+.toggle > .expanded { display: none; }
+
+.toggleVisible > .collapsed { display: none; }
+
+.toggleVisible > .expanded { display: block; }
+
+table.codetable { margin-left: auto; margin-right: auto; border-style: none=
+; }
+
+table.codetable td { padding-right: 0.625rem; }
+
+hr { border-style: solid none none; border-top-width: 0.0625rem; border-top=
+-color: black; }
+
+img.gopher { float: right; margin-left: 0.625rem; margin-top: -2.5rem; marg=
+in-bottom: 0.625rem; z-index: -1; }
+
+h2 { clear: right; }
+
+div.play { padding: 0px 1.25rem 2.5rem; }
+
+div.play pre, div.play textarea, div.play .lines { padding: 0px; margin: 0p=
+x; font-family: Menlo, monospace; font-size: 0.875rem; }
+
+div.play .input { padding: 0.625rem; margin-top: 0.625rem; border-top-left-=
+radius: 0.3125rem; border-top-right-radius: 0.3125rem; overflow: hidden; }
+
+div.play .input textarea { width: 100%; height: 100%; border: none; outline=
+: none; resize: none; overflow: hidden; }
+
+div#playground .input textarea { overflow: auto; resize: auto; }
+
+div.play .output { padding: 0.625rem; max-height: 12.5rem; overflow: auto; =
+border-bottom-right-radius: 0.3125rem; border-bottom-left-radius: 0.3125rem=
+; border-top: none !important; }
+
+div.play .output pre { padding: 0px; border-radius: 0px; }
+
+div.play .input, div.play .input textarea, div.play .output, div.play .outp=
+ut pre { background: rgb(255, 255, 216); }
+
+div.play .input, div.play .output { border: 0.0625rem solid rgb(55, 94, 171=
+); }
+
+div.play .buttons { float: right; padding: 1.25rem 0px 0.625rem; text-align=
+: right; }
+
+div.play .buttons a { height: 1rem; margin-left: 0.3125rem; padding: 0.625r=
+em; cursor: pointer; }
+
+.output .stderr { color: rgb(153, 51, 51); }
+
+.output .system { color: rgb(153, 153, 153); }
+
+div#playground { display: none; }
+
+div#playground { position: absolute; top: 3.938rem; right: 1.25rem; padding=
+: 0px 0.625rem 0.625rem; z-index: 1; text-align: left; background: rgb(224,=
+ 235, 245); border-right: 0.0625rem solid rgb(176, 187, 197); border-bottom=
+: 0.0625rem solid rgb(176, 187, 197); border-left: 0.0625rem solid rgb(176,=
+ 187, 197); border-image: initial; border-top: none; border-bottom-left-rad=
+ius: 0.3125rem; border-bottom-right-radius: 0.3125rem; }
+
+div#playground .code { width: 32.5rem; height: 12.5rem; }
+
+div#playground .output { height: 6.25rem; }
+
+#content .code pre, #content .playground pre, #content .output pre { margin=
+: 0px; padding: 0px; background: none; border: none; outline: transparent s=
+olid 0px; overflow: auto; }
+
+#content .playground .number, #content .code .number { color: rgb(153, 153,=
+ 153); }
+
+#content .code, #content .playground, #content .output { width: auto; margi=
+n: 1.25rem; padding: 0.625rem; border-radius: 0.3125rem; }
+
+#content .code, #content .playground { background: rgb(233, 233, 233); }
+
+#content .output { background: rgb(32, 32, 32); }
+
+#content .output .stdout, #content .output pre { color: rgb(230, 230, 230);=
+ }
+
+#content .output .stderr, #content .output .error { color: rgb(244, 74, 63)=
+; }
+
+#content .output .system, #content .output .exit { color: rgb(255, 209, 77)=
+; }
+
+#content .buttons { position: relative; float: right; top: -3.125rem; right=
+: 1.875rem; }
+
+#content .output .buttons { top: -3.75rem; right: 0px; height: 0px; }
+
+#content .buttons .kill { display: none; visibility: hidden; }
+
+a.error { font-weight: bold; color: white; background-color: darkred; borde=
+r-radius: 0.25rem; padding: 0.125rem 0.25rem; }
+
+#heading-narrow { display: none; }
+
+.downloading { background: rgb(249, 249, 190); padding: 0.625rem; text-alig=
+n: center; border-radius: 0.3125rem; }
+
+@media (max-width: 58.125em) {
+  #heading-wide { display: none; }
+  #heading-narrow { display: block; }
+}
+
+@media (max-width: 47.5em) {
+  .container .left, .container .right { width: auto; float: none; }
+  div#about { max-width: 31.25rem; text-align: center; }
+}
+
+@media (min-width: 43.75em) and (max-width: 62.5em) {
+  div#menu > a { margin: 0.3125rem 0px; font-size: 0.875rem; }
+  input#search { font-size: 0.875rem; }
+}
+
+@media (max-width: 43.75em) {
+  body { font-size: 0.9375rem; }
+  div#playground { left: 0px; right: 0px; }
+  pre, code { font-size: 0.866rem; }
+  div#page > .container { padding: 0px 0.625rem; }
+  div#topbar { height: auto; padding: 0.625rem; }
+  div#topbar > .container { padding: 0px; }
+  #heading-wide { display: block; }
+  #heading-narrow { display: none; }
+  .top-heading { float: none; display: inline-block; padding: 0.75rem; }
+  div#menu { padding: 0px; min-width: 0px; text-align: left; float: left; }
+  div#menu > a { display: block; margin-left: 0px; margin-right: 0px; }
+  #menu .search-box { display: flex; width: 100%; }
+  #menu-button { display: inline-block; }
+  p, pre, ul, ol { margin: 0.625rem; }
+  .pkg-synopsis { display: none; }
+  img.gopher { display: none; }
+}
+
+@media (max-width: 30em) {
+  #heading-wide { display: none; }
+  #heading-narrow { display: block; }
+}
+
+@media print {
+  pre { background: rgb(255, 255, 255); border: 0.0625rem solid rgb(187, 18=
+7, 187); white-space: pre-wrap; }
+}
+------MultipartBoundary--R4g2hiY7q2IeFgqCHBPXl146bcFr8Wd8JmiqkwxKhF------
