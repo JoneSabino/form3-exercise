@@ -2,7 +2,7 @@ version: '3'
 
 services:
   clientlib-tests:
-    image: form3exercise:1.0
+    image: form3exercise:1.1
     working_dir: /go/src/app
     command: >
       sh -c "go test -v github.com/JoneSabino/form3-exercise/pkg/form3 --cover"
