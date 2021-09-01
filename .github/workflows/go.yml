@@ -1,4 +1,4 @@
-name: Form3 Account API Client Library Tests
+name: Form3 Interview Exercise Tests
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
     - name: Check running containers
       run: docker ps -a
     - name: tests
-      run: go test -v ./... --cover
+      run: docker-compose up clientlib-tests
       
       
       
