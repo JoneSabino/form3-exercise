@@ -14,8 +14,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up stack
       run: docker-compose up -d postgresql vault accountapi
-    - name: Check running containers
-      run: docker ps -a
     - name: tests
       run: docker-compose up clientlib-tests
       
